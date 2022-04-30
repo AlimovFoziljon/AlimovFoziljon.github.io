@@ -15,5 +15,4 @@ document.getElementById('closeMobile').onclick = closeMobile
 function closeMobile(){
     document.getElementById('modalMobile')
         .style.display = 'none'
-    openContact()
 }
