@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlimovF</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h2>AlimovF</h3>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#aboutPage">About me</a>
+            <a href="#setup">My setup</a>
+            <a id="contact" href="#">Contact</a>
+        </nav>
+        <div class="mobile">
+            <a id="mobileBtn" href="#">=</a>
+        </div>
+    </header>
+    <main>
+        <div class="modal-wrapper" id="modalContact">
+            <div class="modal">
+                <div class="exit" id="close-contact">
+                    <img src="images/x-lg.svg" alt="x">
+                </div>
+                <h1>Contact with me</h1>
+                <div class="modal__content">
+                    <div class="follows">
+                        <a target="_blank" href="https://t.me/Alimovs_F" target="_blank" class="contact-modal__link"> 
+                            <img src="images/telegram.svg" alt="telegram"> 
+                        </a>
+                        <a target="_blank" href="https://www.instagram.com/ali_mov_f/" class="contact-modal__link"> 
+                            <img class="center" src="images/instagram.svg" alt="instagram"> 
+                        </a>
+                        <a target="_blank" href="https://github.com/AlimovFoziljon" class="contact-modal__link"> 
+                            <img src="images/github.svg" alt="whatsapp"> 
+                        </a>
+                    </div>
+                    <h2 class="contact-modal__phone">+998 93 979 65 95</h2>
+                </div>
+            </div>
+        </div>        
+        <div class="modal-wrapper" id="modalMobile">
+            <div class="modal">
+                <div class="exit" id="closeMobile">
+                    <img src="images/x-lg.svg" alt="x">
+                </div>
+                <div class="modalMobile__content">
+                    <a onclick="closeMobile()" href="#">Home</a>
+                    <a onclick="closeMobile()" href="#aboutPage">About me</a>
+                    <a onclick="closeMobile()" href="#setup">My setup</a>
+                    <a onclick="closeMobile()" id="contactMobile" href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+        <div class="main__page">
+            <div data-aos-duration="3000" data-aos="zoom-in-right" class="main__items">
+                <h1>Hi my name is Foziljon</h1>
+                <p>Web developer 15 y.o it's a my personal web site</p>
+                <div class="follows">
+                    <a target="_blank" href="https://t.me/Alimovs_F"> <img src="./images/telegram.svg" alt="followme"> </a>
+                    <a target="_blank" href="https://www.instagram.com/ali_mov_f/"> <img class="center" src="./images/instagram.svg" alt="followme"> </a>
+                    <a target="_blank" href="https://github.com/AlimovFoziljon"> <img src="./images/github.svg" alt="followme"> </a>
+                </div>
+            </div>
+            <div data-aos-duration="3000" data-aos="zoom-in-left" class="main__image">
+                <img width="500" src="./images/web.png" alt="main">
+            </div>
+        </div>
+        <div data-aos-duration="3000" data-aos="zoom-in-down" id="aboutPage" class="about__page">
+            <div class="about__image">
+                <img height="400" src="./images/web2.png" alt="about">
+            </div>
+            <div class="about__items">
+                <h1>About me</h1>
+                <p>Hi guys, I am Alimov Foziljon, a 15 y.o web developer, I live in Uzbekistan Fergana</p>
+                <h3> - Uzbekistan Fergana</h3>
+                <h3> - 15 y.o</h3>
+                <h3> - Web developer</h3>
+            </div>
+        </div>
+        <div data-aos-duration="3000" data-aos="zoom-in-down" class="skills__page">
+            <h1>My skills page</h1>
+            <div class="skill__items">
+                <div class="skill__item">
+                    <img width="200" src="./images/blender.png" alt="skill">
+                    <h1>Blender</h1>
+                </div>
+                <div class="skill__item">
+                    <img width="200" src="./images/developer.png" alt="skill">
+                    <h1>Web develop</h1>
+                </div>
+                <div class="skill__item">
+                    <img width="200" src="./images/photoshop.png" alt="skill">
+                    <h1>Photoshop</h1>
+                </div>
+            </div>
+        </div>
+        <div id="setup" class="setup__page">
+            <div data-aos-duration="3000" data-aos="zoom-in-right" class="setup__items">
+                <h1>My setup</h1>
+                <p> - Company: Lg electronics</p>
+                <p> - Model: A510</p>
+                <p> - Ram: 4</p>
+                <p> - Videocard: Nvidia Gt 425m</p>
+                <p> - Bit: x64</p>
+            </div>
+            <div data-aos-duration="3000" data-aos="zoom-in-left" class="setup__image">
+                <img height="350" width="400" src="./images/laptop.png" alt="laptop">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy Copyright Alimov Foziljon 2022 | belongs to...)</p>
+        <div class="icons">
+            <a target="_blank" href="https://t.me/Alimovs_F"> <img src="./images/telegram.svg" alt="followme"> </a>
+            <a target="_blank" href="https://www.instagram.com/ali_mov_f/"> <img class="center" src="./images/instagram.svg" alt="followme"> </a>
+            <a target="_blank" href="https://github.com/AlimovFoziljon"> <img src="./images/github.svg" alt="followme"> </a>
+        </div>
+    </footer>
+    <script src="./app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
