@@ -16,3 +16,12 @@ function closeMobile(){
     document.getElementById('modalMobile')
         .style.display = 'none'
 }
+document.getElementById("fw").onclick = modalFw
+function modalFw(){
+    document.getElementById('modalFw')
+        .style.display = 'flex'
+}
+document.getElementById('closeFw').onclick = ()=>{
+    document.getElementById('modalFw')
+        .style.display = 'none'
+}

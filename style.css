@@ -112,6 +112,20 @@ header nav a:hover{
     color: tan;
     margin: 10px 0;
 }
+.main__items h5{
+    margin: 10px 0;
+}
+#fw{
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 15px;
+    color: tan;
+    transition: all .5s;
+}
+#fw:hover{
+    padding-bottom: 5px;
+    border-bottom: 1px solid tan;
+}
 .skills__page{
     display: flex;
     flex-direction: column;
@@ -233,6 +247,7 @@ footer p{
     flex-direction: column;
     align-items: center;
     margin: 20px 0;
+    text-align: center;
 }
 .modal__content a{
     text-decoration: none;
@@ -248,6 +263,12 @@ footer p{
     font-weight: 400;
     color: tan;
     margin: 10px;
+}
+.modal-wrapper p{
+    font-weight: 400;
+    color: tan;
+    font-size: 30px;
+    text-align: center;
 }
 .exit img:hover{
     opacity: 0.5;
@@ -265,6 +286,7 @@ footer p{
     .main__page{
         display: flex;
         flex-direction: column;
+        margin-top: 50px;
     }
     .main__image img{
         width: 400px;
