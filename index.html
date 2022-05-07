@@ -19,6 +19,13 @@
             <a href="#setup">My setup</a>
             <a id="contact" href="#">Contact</a>
         </nav>
+        <nav class="mobile-nav">
+            <span onclick="closeMobile()" class="mobile-close"> <img src="./images/x-lg.svg" alt=""> </span>
+            <a onclick="closeMobile()" href="#">Home</a>
+            <a onclick="closeMobile()" href="#aboutPage">About me</a>
+            <a onclick="closeMobile()" href="#setup">My setup</a>
+            <a id="mobile-contact" href="#">Contact</a>
+        </nav>
         <div class="mobile">
             <a id="mobileBtn" href="#">=</a>
         </div>
@@ -43,19 +50,6 @@
                         </a>
                     </div>
                     <h2 class="contact-modal__phone">+998 93 979 65 95</h2>
-                </div>
-            </div>
-        </div>        
-        <div class="modal-wrapper" id="modalMobile">
-            <div class="modal">
-                <div class="exit" id="closeMobile">
-                    <img src="images/x-lg.svg" alt="x">
-                </div>
-                <div class="modalMobile__content">
-                    <a onclick="closeMobile()" href="#">Home</a>
-                    <a onclick="closeMobile()" href="#aboutPage">About me</a>
-                    <a onclick="closeMobile()" href="#setup">My setup</a>
-                    <a onclick="closeMobile(); openContact()" href="#">Contact</a>
                 </div>
             </div>
         </div>

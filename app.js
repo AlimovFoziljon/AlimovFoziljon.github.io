@@ -7,15 +7,6 @@ document.getElementById('close-contact').onclick = ()=>{
     document.getElementById('modalContact')
         .style.display = 'none'
 }
-document.getElementById('mobileBtn').onclick = ()=>{
-    document.getElementById('modalMobile')
-        .style.display = 'flex'
-}
-document.getElementById('closeMobile').onclick = closeMobile
-function closeMobile(){
-    document.getElementById('modalMobile')
-        .style.display = 'none'
-}
 document.getElementById("fw").onclick = modalFw
 function modalFw(){
     document.getElementById('modalFw')
@@ -25,3 +16,19 @@ document.getElementById('closeFw').onclick = ()=>{
     document.getElementById('modalFw')
         .style.display = 'none'
 }
+function hamburgerHandler(menuPosition){
+    document
+        .querySelector('.mobile-nav')
+        .style
+        .right = menuPosition + 'px'
+}
+document
+    .getElementById('mobileBtn')
+    .onclick = ()=> hamburgerHandler(0)
+
+    function closeMobile(){
+        setTimeout(()=>{hamburgerHandler(-400)}, 1000)
+        
+    }
+
+document.getElementById('mobile-contact').onclick = openContact

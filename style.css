@@ -13,7 +13,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
+    padding: 0 50px;
+    height: 70px;
     position: sticky;
     top: 0;
     background-color: #000;
@@ -189,9 +190,6 @@ footer p{
     color: tan;
 }
 .mobile{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     display: none;
 }
 #mobileBtn{
@@ -275,6 +273,38 @@ footer p{
 }
 .exit img{
     transition: all .5s;
+}
+.mobile-nav{
+    border-left: 2px solid tan;
+    height: 100vh;
+    width: 300px;
+    position: fixed;
+    right: -400px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #000;
+    transition: all .8s;
+    z-index: 999;
+}
+.mobile-nav .mobile-close{
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 2.5em;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.mobile-nav a{
+    margin: 15px;
+    color: tan;
+}
+.mobile-nav a:hover{
+    border-bottom: none;
+    margin: 0;
+    font-size: 1.3em;
 }
 @media (max-width: 850px) {
     header nav{
