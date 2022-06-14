@@ -1,0 +1,133 @@
+:root{
+    --white: #fff;
+    --blue: #018ABE;
+    --gray: #8A9398;
+}
+@font-face {
+    font-family: El messiri;
+    src: url(../fonts/ElMessiri-Regular.ttf);
+}
+@font-face {
+    font-family: Proxima nova;
+    src: url(../fonts/ProximaNova-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #162831;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid var(--gray);
+}
+nav a{
+    text-decoration: none;
+    color: var(--white);
+    padding: 0 20px;
+    font-family: Proxima nova;
+    font-weight: 400;
+    font-size: 14px;
+    transition: all .5s;
+}
+nav a:hover{
+    color: #018ABE;
+}
+.blue-button a{
+    text-decoration: none;
+    color: var(--white);
+    padding: 9px 15px;
+    background-color: var(--blue);
+    font-weight: 600;
+    font-size: 13px;
+    font-family: Proxima nova;
+    transition: all .5s;
+    border-radius: 3px;
+}
+.blue-button a:hover{
+    background-color: var(--white);
+    color: #018ABE;
+}
+.description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.description h1{
+    font-weight: 500;
+    font-size: 32px;
+    margin: 0 20px;
+    line-height: 140%;
+    font-family: El messiri;
+    color: var(--white);
+}
+.left{
+    background-color: #018ABE;
+    width: 20px;
+    height: 10px;
+    border-radius: 0 10px 0 10px;
+}
+.right{
+    background-color: #018ABE;
+    width: 20px;
+    height: 10px;
+    border-radius: 10px 0 10px 0;
+}
+main{
+    margin-top: 50px;
+}
+.news-page{
+    display: grid;
+    grid-template-columns: 416px 416px 416px;
+    justify-content: center;
+    gap: 20px;
+}
+.news-page-item{
+    position: relative;
+}
+.news-page-item{
+    color: var(--white);
+}
+.news-page-item img{
+    border-radius: 10px;
+}
+.paragraph{
+    position: absolute;
+    top: 210px;
+    left: 30px;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: El messiri;
+}
+.blue-data{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    background-color: #018ABE;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: Proxima nova;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    border-top: 1px solid var(--gray);
+    padding: 20px;
+}
+footer p{
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--white);
+    font-family: Proxima nova;
+    margin: 0 120px;
+}

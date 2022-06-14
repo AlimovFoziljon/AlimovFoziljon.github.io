@@ -306,6 +306,64 @@ footer p{
     margin: 0;
     font-size: 1.3em;
 }
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+.portfolio h2{
+    font-size: 30px;
+}
+.portfolio h3{
+    color: tan;
+    font-weight: 400;
+    border-right: 2px solid tan;
+    padding: 0 10px;
+    border-left: 2px solid tan;
+    margin: 30px 0;
+}
+.portfolio-item{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    margin: 50px;
+}
+.portfolio-item p{
+    font-size: 20px;
+    color: tan;
+}
+.portfolio-image{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+}
+.portfolio-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.portfolio-link a:hover{
+    box-shadow: 0 0 15px tan;
+}
+.portfolio-link a{
+    text-decoration: none;
+    border: 2px solid tan;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 15px;
+    color: tan;
+    transition: all .3s;
+}
+.portfolio-link a img{
+    width: 30px;
+    margin: 0 10px 0 0;
+}
 @media (max-width: 850px) {
     header nav{
         display: none;
@@ -343,6 +401,10 @@ footer p{
         display: flex;
         flex-direction: column;
     }
+    .portfolio-image{
+        width: 500px;
+        height: 300px;
+    }
 }
 @media (max-width: 680px) {
     .about__page{
@@ -352,6 +414,10 @@ footer p{
 @media (max-width: 580px) {
     .icons{
         display: none;
+    }
+    .portfolio-image{
+        width: 400px;
+        height: 250px;
     }
 }
 @media (max-width: 500px) {
@@ -378,5 +444,11 @@ footer p{
     }
     .main__items{
         width: 300px;
+    }
+}
+@media (max-width: 400px) {
+    .portfolio-image{
+        width: 330px;
+        height: 200px;
     }
 }

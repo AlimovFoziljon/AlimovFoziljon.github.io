@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Inter-medium;
+    src: url(./fonts/Inter/Inter-Medium.ttf);
+}
+@font-face {
+    font-family: Inter-regular;
+    src: url(./fonts/Inter/Inter-Regular.ttf);
+}
+@font-face {
+    font-family: Playfair-bold;
+    src: url(./fonts/Playfair/PlayfairDisplay-Bold.ttf);
+}
+@font-face {
+    font-family: Inter-semibold;
+    src: url(./fonts/Inter/Inter-SemiBold.ttf);
+}
+@font-face {
+    font-family: Mulish-bold;
+    src: url(/fonts/Mulish/Mulish-Bold.ttf);
+}
+@font-face {
+    font-family: Mulish-light;
+    src: url(./fonts/Mulish/Mulish-Light.ttf);
+}
+:root{
+    --oldgray: #AFB0B9;
+    --gray: #B8BECD;
+    --dark: #202336;
+    --orange: #FB8F1D;
+    --darkgray: #4A4C53;
+    --graying: #7D7987;
+}
+.wrapper{
+    max-width: 1124px;
+    margin: auto;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    font-size: 15px;
+    line-height: 60px;
+}
+header nav a{
+    padding: 0 17px;
+    text-decoration: none;
+    color: var(--gray);
+    font-family: Inter-regular;
+}
+.home{
+    color: var(--dark);
+    font-family: Inter-medium;
+}
+.nav-button{
+    color: #FB8F1D;
+    font-family: Inter-medium;
+    border: 1px solid var(--orange);
+    padding: 8px 46px;
+    border-radius: 8px;
+    margin: 0 10px;
+    transition: all .5s;
+}
+.nav-button-two{
+    background-color: #FB8F1D;
+    color: #fff;
+    padding: 8px 36px;
+}
+.nav-button:hover{
+    background-color: #FB8F1D;
+    color: #fff;
+}
+.nav-button-two:hover{
+    background-color: #fff;
+    color: #FB8F1D;
+}
+.header-section{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-description h1{
+    font-size: 54px;
+    line-height: 60px;
+    color: var(--dark);
+}
+.header-description p{
+    color: var(--dark);
+    font-size: 22px;
+    line-height: 26px;
+    font-family: Inter-semibold;
+    margin: 40px 0 20px 0;
+}
+.line{
+    width: 30px;
+    background-color: var(--dark);
+    height: 2px;
+    margin: 0 0 40px 0;
+}
+.header-form{
+    margin: 30px 0;
+}
+.two{
+    margin-left: 10px;
+}
+.header-form input{
+    padding: 10px 15px;
+    outline: none;
+    border: 1px solid var(--oldgray);
+    color: var(--darkgray);
+    font-size: 15px;
+    font-family: Inter-regular;
+    border-radius: 6px;
+}
+.header-form-two{
+    margin-bottom: 50px;
+}
+.orange-button{
+    color: #fff;
+    font-family: Mulish-bold;
+    padding: 10px 46px;
+    border: 1px solid var(--orange);
+    border-radius: 8px;
+    transition: all .5s;
+    background-color: var(--orange);
+    color: #fff;
+    text-decoration: none;
+}
+.orange-button:hover{
+    background-color: #fff;
+    color: var(--orange);
+}
+.explore-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+.explore-description h1{
+    font-size: 36px;
+    color: var(--dark);
+    font-family: Playfair-bold;
+}
+.explore-description p{
+    width: 369px;
+    color: var(--graying);
+    font-family: Mulish-light;
+    font-size: 17px;
+    margin: 40px 0;
+}
+.destinations-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+}
+.destination-description{
+    display: flex;
+    justify-content: space-between;
+}
+.destinations-cards{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.destination-description h1{
+    font-family: Playfair-bold;
+    color: #000;
+}
+.destination-description a{
+    color: var(--orange);
+    text-decoration: none;
+    font-family: Inter-semibold;
+}
+.destination-card img{
+    border-radius: 5px;
+    width: 260px;
+    height: 320px;
+}
+.destination-card{
+    position: relative;
+    margin: 10px;
+}
+.destination-card-txt{
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    border-top-right-radius: 6px;
+    padding: 5px 10px 0 10px;
+}
+.destination-card-txt h4{
+    color: #000;
+    font-family: Inter-semibold;
+    font-size: 15px;
+}
+.destination-card-txt p{
+    color: var(--darkgray);
+    font-family: Inter-medium;
+    font-size: 13px;
+}
+.carousel{
+    width: 400px;
+}
+.testimonials{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 200px;
+}
+.testimonials-description h1{
+    font-family: Plafair-bold;
+}
+.stars{
+    margin: 100px 0 10px 0;
+}
+footer{
+    margin-top: 300px;
+}
+.footer-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer h3{
+    font-size: 20px;
+}
+footer p {
+    color: var(--graying);
+}
+.footer-end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    border-top: 2px solid var(--gray);
+    padding: 10px;
+}
+.footer-end img{
+    margin: 0 10px;
+}
